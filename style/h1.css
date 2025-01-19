@@ -1,0 +1,29 @@
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 40px; 
+    color: #ffcc00;
+    text-align: center; 
+    font-family: 'Arial', sans-serif; 
+    padding: 20px; 
+    border-radius: 10px; 
+    display: inline-block; 
+    text-shadow: 
+        0 0 1px #000000, 
+        0 0 10px #ffcc00, 
+        0 0 20px #ffcc00, 
+        0 0 30px #ffcc00, 
+        0 0 40px #ffcc00, 
+        0 0 50px #ffcc00;
+    animation: blink 0.08s infinite; 
+}

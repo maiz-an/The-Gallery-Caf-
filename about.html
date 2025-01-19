@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Promotions - The Gallery Café</title>
+    <link rel="stylesheet" href="style/events_stylesheet.css">
+    <link rel="stylesheet" href="style/floating_contact_button.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/h1.css">
+    <script src="js/audio.js" defer></script>
+    <script src="js/upbtn.js" defer></script>
+    <style>.logo {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    
+    .logo img {
+        max-width: 155px;
+        height:120px;
+    }</style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="The Gallery Café Logo">
+            </a>
+        <h1>The Gallery Café</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="menu.html" class="nav-btn">Menu</a></li>
+                <li><a href="events.html" class="nav-btn">Events & Promotions</a></li>        
+                <li><a href="about.html" class="nav-btn" style="color: #ffcc00;">About Us</a></li>
+                <li><a href="login.html" class="nav-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <section id="events">
+            
+            
+            <div class="event-container">
+                <h3 class="center-text">The Gallery Cafe</h3>
+                <p>The Gallery Café is a renowned restaurant located in Colombo, offering a unique dining experience with a blend of traditional and modern cuisines. Our goal is to provide an unforgettable dining experience with our exquisite food, excellent service, and elegant ambiance.</p>
+                <p>Founded in 2001, we have been serving our patrons with the finest dishes crafted from the freshest ingredients. Our chefs bring a wealth of experience and creativity to the kitchen, ensuring that each meal is a culinary delight.</p>
+                <p>Whether you are looking for a place to celebrate a special occasion or simply want to enjoy a great meal with friends and family, The Gallery Café is the perfect destination. We look forward to welcoming you and providing you with an exceptional dining experience.</p>
+                <img src="images/iki Rostery .jpg" alt="Restaurant Interior">
+                
+            </div>
+        </section>
+
+
+        <section id="promotions">
+            <h2>Our Mission & Vision</h2>
+            <div class="promotion-container">
+                <h3>Mission</h3>
+                <p>To offer an unparalleled dining experience by providing the highest quality food, exceptional service, and a welcoming atmosphere.</p>
+                <h3>Vision</h3>
+                <p>To be the leading restaurant in Colombo, known for our innovative cuisine, outstanding customer service, and commitment to excellence.</p>
+                
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <a href="https://en.wikipedia.org/wiki/Alain_Ducasse" target="_blank">
+                    <img src="images/Marcus Samuelsson's New Cookbook Celebrates Black Chefs Across America.jpg" alt="Chef">
+                </a>
+                
+                <h3>Chef Alain Ducasse</h3>
+                <p>Head Chef</p>
+
+                
+
+            </div>
+            <div class="team-member">
+                <img src="images/Restaurant Manager.jpg" alt="Restaurant Manager">
+                <h3>Sarah Lee</h3>
+                <p>Restaurant Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Gaël Saunié, Chef Sommelier Jiva Hill Resort, Relais & Châteaux.jpg" alt="Sommelier">
+                <h3>John Doe</h3>
+                <p>Sommelier</p>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-item">
+                <img src="images/gallery (1).jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery (2).jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery (3).jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery (4).jpg" alt="Gallery Image 4">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 The Gallery Café. All rights reserved.</p>
+            <p>123 Main Street, Colombo, Sri Lanka | Phone: +94 77 123 4567 | Email: info@gallerycafe.com</p>
+        </div>
+    </footer>
+</body>
+<!-- Floating Contact Button -->
+<div class="floating-contact">
+    <a href="contact_form.php" class="contact-btn">
+        <img src="images/customer-service-icon.png" alt="Contact Us">
+    </a>
+</div>
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top" id="scrollToTop">
+            <a href="#top" class="scroll-btn">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+                <!-- Floating Audio Control -->
+        <div id="audio-control">
+            <button id="musicPlaying">&#9654;</button> <!-- Play Icon -->
+            <audio id="background-music" loop>
+                <source src="images/mp3.mp3" type="audio/mpeg">
+                browser not support the audio
+            </audio>
+        </div>
+        
+</html>

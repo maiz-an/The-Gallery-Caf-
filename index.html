@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Café - Home</title>
+    <link rel="stylesheet" href="style/intex_html_stylesheet.css">
+    <link rel="stylesheet" href="style/floating_contact_button.css">
+    <link rel="stylesheet" href="style/events_stylesheet.css">   
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/h1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/h1.css">
+    <link rel="stylesheet" href="style/loader.css">
+    <script src="js/loader.js" defer></script>
+    <script src="js/audio.js" defer></script>
+    <script src="js/upbtn.js" defer></script>
+    <script src="jsback_button.js" defer></script>
+    
+    
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        let slideIndex = 0;
+        let slides = document.querySelectorAll('.slide');
+        
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        
+        function plusMainSlides(n) {
+            showSlidesManually(slideIndex += n);
+        }
+        
+        function showSlidesManually(n) {
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex - 1].style.display = 'block';
+        }
+        
+        document.querySelector('.prev').addEventListener('click', function() {
+            plusMainSlides(-1);
+        });
+        
+        document.querySelector('.next').addEventListener('click', function() {
+            plusMainSlides(1);
+        });
+        
+        // Initial call to start the slideshow
+        showSlides();
+    });
+    </script>
+        
+    <style>
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    
+    .logo img {
+        max-width: 155px;
+        height:120px;
+        
+    }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="The Gallery Café Logo">
+            </a>
+            <div class="title-nav">
+                <h1>The Gallery Café</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-btn" style="color: #ffcc00;">Home</a></li>
+                        <li><a href="menu.html" class="nav-btn">Menu</a></li>
+                        <li><a href="events.html" class="nav-btn">Events & Promotions</a></li>        
+                        <li><a href="about.html" class="nav-btn">About Us</a></li>
+                        <li><a href="login.html" class="nav-btn">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <div id="loader">
+            <img src="images/logo.png" alt="The Gallery Café Logo">
+            <p>Loading, please wait...</p>
+        </div>
+    
+        <h2>Welcome to The Gallery Café <br></h2> <br>
+        
+            <div class="slider main-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="images/city-background-panoramic-view.jpg" alt="Slide 1">
+                        <div class="slide-content">
+                            <h2>Welcome to The Gallery Café</h2>
+                            <a href="registration.html">Join Us</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/interior.jpg" alt="Slide 2">
+                        <div class="slide-content">
+                            <h2>Exclusive Suites in the Heart of Colombo</h2>
+                            <a href="create_reservation.php">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/family-eating-together-table.jpg" alt="Slide 3">
+                        <div class="slide-content">
+                            <h2>Fine Dining Experience</h2>
+                            <a href="menu.html">View Menu</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/side-view-handsome-male-musician-holding-saxophone.jpg" alt="Slide 4">
+                        <div class="slide-content">
+                            <h2>Events & Promotions</h2>
+                            <a href="events.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusMainSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusMainSlides(1)">&#10095;</a>
+            </div>
+        </section>
+      
+
+
+       
+            <h2>Today's Specials</h2>
+            <div class="promotion-container">
+                <div class="promotion-item">
+                    <img src="images/Grilled Cedar Plank Salmon [45 Minutes].jpg" alt="Special 1">
+                    <h3>Grilled Salmon</h3>
+                    <p>A deliciously grilled salmon served with a side of fresh vegetables and a lemon butter sauce.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/Delicious Steak and Fries Paris_ 10 Must-Try Bistros.jpg" alt="Special 2">
+                    <h3>Steak Frites</h3>
+                    <p>Juicy steak cooked to perfection, served with crispy fries and a rich peppercorn sauce.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/download.jpg" alt="Special 3">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Indulge in a warm, gooey chocolate cake with a molten center, served with vanilla ice cream.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/Tandoori Chicken Recipe (Authentic, Easy & Best) - Cubes N Juliennes.jpg" alt="Special 4">
+                    <h3>Grilled Chicken</h3>
+                    <p>Tender grilled chicken breast served with a side of mashed potatoes and steamed vegetables.</p>
+                </div>
+                <div class="promotion-container">
+                    <div class="promotion-item">
+                        <a href="view_products_customer.php?item=srilankan1">
+                            <img src="images/mineral water.jpeg" alt="Sri Lankan Dish 1">
+                        </a>
+                        <h3>Water</h3>
+                        <p>Normal Water.</p>
+                    </div>
+                    <div class="promotion-item">
+                        <a href="view_products_customer.php?item=srilankan2">
+                            <img src="images/Authentic Masala Chai Recipe - Spiced Indian Milk Tea.jpeg" alt="Sri Lankan Dish 2">
+                        </a>
+                        <h3>Masala Chai</h3>
+                        <p>Indian masala chai is a delicious and sweet beverage made with milk, black tea, and several spices.</p>
+                    </div>
+                    <div class="promotion-item">
+                        <a href="view_products_customer.php?item=srilankan3">
+                            <img src="images/beer.jpeg" alt="Sri Lankan Dish 3">
+                        </a>
+                        <h3>Beer</h3>
+                        <p>Domestic Beer | Flavored Malt Beverages.</p>
+                    </div>
+                    <div class="promotion-item">
+                        <a href="view_products_customer.php?item=srilankan4">
+                            <img src="images/Nakoa Cafe _ Our Signature Menu _ Kopi Susu Gula Aren _ Caramel Macchiato _ Malang.jpeg" alt="Sri Lankan Dish 4">
+                        </a>
+                        <h3>Nakoa caffee</h3>
+                        <p>Choco Banana flavoured iced coffee.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Upcoming Events & Special Promotions</h2>
+            <div class="promotion-container">
+                <div class="promotion-item">
+                    <img src="images/Wine.jpg" alt="wine">
+                    <h3>Wine Tasting Night</h3>
+                    <p>Join us for an exquisite wine tasting experience on July 30th.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/LiveMusic.jpg" alt="live music">
+                    <h3>Live Music with Local Artists</h3>
+                    <p>Enjoy live music performances every Friday night.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/HappyHour.jpg" alt="Happy Hour">
+                    <h3>Happy Hour</h3>
+                    <p>Get 50% off on all beverages from 5 PM to 7 PM daily.</p>
+                </div>
+                <div class="promotion-item">
+                    <img src="images/Brunch.jpg" alt="Weekend Brunch">
+                    <h3>Weekend Brunch</h3>
+                    <p>Enjoy a special brunch menu every weekend from 10 AM to 2 PM.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        
+        
+        
+        
+    
+    <footer>
+        <div class="footer-container">
+            
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 The Gallery Café. All rights reserved.</p>
+            <p>123 Main Street, Colombo, Sri Lanka | Phone: +94 77 123 4567 | Email: info@gallerycafe.com</p>
+        </div>
+    </footer>
+
+     <!-- Floating Contact Button -->
+     <div class="floating-contact">
+        <a href="contact_form.php" class="contact-btn">
+            <img src="images/customer-service-icon.png" alt="Contact Us">
+        </a>
+    </div>
+        <!-- Scroll to Top Button -->
+<div class="scroll-to-top" id="scrollToTop">
+    <a href="#top" class="scroll-btn">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</div>
+        <!-- Floating Audio Control -->
+<div id="audio-control">
+    <button id="musicPlaying">&#9654;</button> <!-- Play Icon -->
+    <audio id="background-music" loop>
+        <source src="images/mp3.mp3" type="audio/mpeg">
+        browser not support the audio
+    </audio>
+</div>
+
+
+</body>
+</html>
